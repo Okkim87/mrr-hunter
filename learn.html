@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SE3YQP41VC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SE3YQP41VC');
+</script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bitcoin Mining for Beginners | HashRental</title>
+  <meta name="description" content="Learn how Bitcoin mining works, what a Bitaxe Gamma is, how mining pools work, and why renting a Bitcoin miner is a great way to learn." />
+  <meta name="keywords" content="bitcoin mining for beginners, how bitcoin mining works, bitaxe gamma, mining pools, learn bitcoin mining, bitcoin miner rental">
+  <link rel="canonical" href="https://hashrental.store/learn.html" />
+  <meta name="theme-color" content="#0b0b0f" />
+  <link rel="icon" href="favicon.ico">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Bitcoin Mining for Beginners | HashRental" />
+  <meta property="og:description" content="Learn how Bitcoin mining works, what a Bitaxe Gamma is, how mining pools work, and why renting a Bitcoin miner is a great way to learn." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://hashrental.store/learn.html" />
+  <meta property="og:site_name" content="HashRental" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Bitcoin Mining for Beginners | HashRental" />
+  <meta name="twitter:description" content="Learn how Bitcoin mining works, what a Bitaxe Gamma is, how mining pools work, and why renting a Bitcoin miner is a great way to learn." />
+  <!-- JSON-LD Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Bitcoin Mining for Beginners",
+    "description": "Learn how Bitcoin mining works, what a Bitaxe Gamma is, how mining pools work, and why renting a Bitcoin miner is a great way to learn.",
+    "url": "https://hashrental.store/learn.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Nordhash Oy",
+      "url": "https://hashrental.store/"
+    }
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#060608;
+      --card: rgba(255,255,255,0.04);
+      --glass: rgba(255,255,255,0.04);
+      --muted: #b7c0c6;
+      --accent: #8ab4ff;
+      --glass-border: rgba(255,255,255,0.06);
+      --glass-highlight: rgba(255,255,255,0.02);
+      --radius:14px;
+      --max-width:1100px;
+      --badge-bg: rgba(255,255,255,0.03);
+    }
+    html{box-sizing:border-box;scroll-behavior:smooth}
+    *,*::before,*::after{box-sizing:inherit}
+    body{
+      margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      background:linear-gradient(180deg,#050507 0%, #0c0c10 100%);
+      color:#e6eef6;line-height:1.45;-webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding-bottom:4rem;
+    }
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+    header{position:sticky;top:0;z-index:40;backdrop-filter: blur(6px);background:linear-gradient(180deg,rgba(6,6,8,0.35),rgba(6,6,8,0.15));border-bottom:1px solid rgba(255,255,255,0.03)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:.6rem 1rem}
+    .brand{font-weight:600;letter-spacing:0.6px}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:0;top:0;width:auto;height:auto;padding:.5rem;background:#fff;color:#000;z-index:60}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:.5rem;align-items:center}
+    .nav-links a{padding:.4rem .7rem;border-radius:10px}
+    .cta{display:inline-flex;gap:.5rem;align-items:center}
+    .btn{
+      display:inline-block;padding:.6rem 1rem;border-radius:10px;font-weight:700;background:linear-gradient(180deg,#1b6cff,#4d8bff);color:white;border:none;box-shadow:0 6px 18px rgba(13,54,122,0.3);cursor:pointer;font-size:.95rem
+    }
+    .btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(13,54,122,0.4)}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent)}
+    :focus-visible{outline:3px solid rgba(138,180,255,0.28);outline-offset:3px;border-radius:8px}
+    button:focus-visible, a:focus-visible { box-shadow: 0 0 0 4px rgba(138,180,255,0.12); }
+
+    .hero{min-height:auto;display:grid;align-items:center;padding:2rem 1rem}
+    .hero-grid{display:grid;gap:1.2rem}
+    .title{font-size:clamp(1.6rem,5vw,2.8rem);line-height:1.02;margin:0;font-weight:700}
+    .hero-title{font-size:clamp(1.4rem,4vw,2.2rem);line-height:1.1;margin:0;font-weight:700;margin-top:2rem}
+    .subtitle{color:var(--muted);margin-top:.6rem;font-size:1rem}
+    .banner{display:inline-block;padding:.45rem .8rem;border-radius:999px;background:linear-gradient(90deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02));border:1px solid var(--glass-border);font-size:.85rem;color:var(--muted);width:fit-content}
+    .banner--scarce{background: linear-gradient(90deg,#ff7043,#ff8a00);color: #fff;border: 1px solid rgba(255,255,255,0.06);box-shadow: 0 6px 18px rgba(255,120,50,0.06);font-weight:800}
+
+    .cards{display:grid;gap:1rem;margin-top:1.2rem}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius);padding:1rem;border:1px solid var(--glass-border);box-shadow:0 8px 30px rgba(0,0,0,0.3)}
+
+    .plans{display:grid;gap:.9rem}
+    .plan{display:flex;flex-direction:column;gap:.6rem;padding:1rem;border-radius:12px;border:1px solid rgba(255,255,255,0.03);background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.008))}
+
+    .specs{display:flex;flex-wrap:wrap;gap:.6rem;color:var(--muted);font-size:.95rem}
+    .price-row{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.6rem}
+    .price-card{background:var(--badge-bg);padding:.5rem .75rem;border-radius:10px;border:1px solid rgba(255,255,255,0.03);font-weight:700}
+
+    .badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.8rem}
+    .badge{background:rgba(0,0,0,0.35);padding:.45rem .7rem;border-radius:999px;border:1px solid rgba(255,255,255,0.03);color:var(--muted);font-weight:600;display:inline-flex;align-items:center;gap:.35rem;font-size:.9rem}
+
+    .rental-actions{display:flex;flex-direction:column;gap:.6rem;align-items:center}
+    .rent-row{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center}
+    .configure-btn{display:inline-block;padding:.68rem 1.05rem;border-radius:12px;background:linear-gradient(180deg,#1b6cff,#4d8bff);color:#fff;font-weight:800;border:0;min-width:220px}
+    @media(max-width:719px){
+      .configure-btn{display:block;width:100%;text-align:center}
+      .rent-row{justify-content:space-between}
+    }
+
+    .payment-notice{margin-top:.6rem;color:#ffd9b3;background:linear-gradient(180deg,rgba(255,245,230,0.02),rgba(255,240,220,0.01));padding:.6rem;border-radius:10px;border:1px solid rgba(255,160,100,0.2);font-size:.9rem}
+
+    .reveal{opacity:0;transform:translateY(12px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.visible{opacity:1;transform:none}
+    @media(prefers-reduced-motion:reduce){.reveal{transition:none;opacity:1;transform:none}}
+
+    .mobile-menu{display:none}
+    .menu-toggle{display:none;background:none;border:none;color:var(--accent);font-size:1.2rem;cursor:pointer;padding:.4rem}
+    @media(max-width:719px){
+      .menu-toggle{display:block}
+      .nav-links{display:none}
+      .mobile-menu{display:block}
+      .mobile-menu.open{display:block}
+      .mobile-menu{display:none;padding:1rem;border-top:1px solid rgba(255,255,255,0.03)}
+    }
+
+    .muted-small{color:var(--muted);font-size:.9rem}
+
+    .dot{margin-right:.35rem}
+
+    .cta-full{background:linear-gradient(180deg, rgba(75,75,85,0.18), rgba(60,60,75,0.12));border:1px solid rgba(255,255,255,0.03);border-radius:12px}
+
+    .disclaimer{font-size:.85rem;color:#b39;margin-top:.6rem}
+
+    footer{margin-top:2rem;padding:1.2rem;border-top:1px solid rgba(255,255,255,0.03);background:linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.1))}
+    .footer-grid{display:flex;flex-direction:column;gap:1rem}
+
+    details{cursor:pointer}
+    details summary{font-weight:600;padding:.4rem 0;list-style:none}
+    details summary::-webkit-details-marker{display:none}
+    details summary::before{content:"▸ ";margin-right:.4rem;display:inline-block;transition:transform .2s}
+    details[open] summary::before{transform:rotate(90deg)}
+    details[open]{padding:.6rem 0;border-top:1px solid rgba(255,255,255,0.02);border-bottom:1px solid rgba(255,255,255,0.02)}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <div class="container nav-inner" role="navigation" aria-label="Main navigation">
+      <div>
+        <div class="brand">HashRental</div>
+        <div class="muted-small" style="margin-top:2px">Operated from Finland</div>
+      </div>
+      <div style="display:flex;gap:.6rem;align-items:center">
+        <nav class="nav-links" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#plans">Rental Plans</a></li>
+            <li><a href="index.html#specs">Specs</a></li>
+            <li><a href="learn.html">Learn</a></li>
+            <li><a href="terms.html">Terms</a></li>
+          </ul>
+        </nav>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" id="menuToggle" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu container" hidden>
+      <div style="display:flex;flex-direction:column;gap:.6rem">
+        <a href="index.html">Home</a>
+        <a href="index.html#plans">Rental Plans</a>
+        <a href="index.html#specs">Specs</a>
+        <a href="learn.html">Learn</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <h1 class="title reveal">Bitcoin Mining for Beginners</h1>
+          <p class="subtitle reveal">Learn how Bitcoin mining works, what a Bitaxe Gamma is, how mining pools work, and why renting a Bitcoin miner is a great way to learn.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:1.6rem">
+      <div class="card reveal">
+        <h2 class="hero-title">Introduction</h2>
+        <p>Bitcoin mining is the process of validating transactions on the Bitcoin network and securing the blockchain. Miners compete to solve complex mathematical puzzles, and the first to solve it gets to add a new block to the chain and receives Bitcoin rewards in return. This process is fundamental to Bitcoin's security and operation.</p>
+        <p>If you're curious about how Bitcoin works but intimidated by the technical complexity, renting a Bitaxe Gamma is an excellent way to get hands-on experience without the upfront investment in hardware and infrastructure.</p>
+      </div>
+    </section>
+
+    <section style="margin-top:1.2rem">
+      <div class="card reveal">
+        <h2 class="hero-title">What is Bitcoin Mining?</h2>
+        <p>Bitcoin miners are computers running specialized software that compete to validate new transactions. Here's how it works:</p>
+        <ul style="color:var(--muted);margin-top:.6rem">
+          <li><strong>Transaction pool:</strong> Bitcoin transactions wait in a memory pool to be confirmed.</li>
+          <li><strong>Block creation:</strong> Miners gather pending transactions and organize them into a block.</li>
+          <li><strong>Proof of Work:</strong> Miners solve a cryptographic puzzle to prove they've done the computational work. This is called Proof of Work.</li>
+          <li><strong>Network validation:</strong> Other nodes verify the solution and accept the new block.</li>
+          <li><strong>Bitcoin reward:</strong> The miner who solved the puzzle receives newly created Bitcoin (the block reward) plus transaction fees.</li>
+        </ul>
+        <p style="margin-top:.6rem">This process happens roughly every 10 minutes, and it's what makes Bitcoin decentralized, secure, and tamper-proof. Miners are essential to the Bitcoin network's operation.</p>
+      </div>
+    </section>
+
+    <section style="margin-top:1.2rem">
+      <div class="card reveal">
+        <h2 class="hero-title">What is a Bitaxe Gamma?</h2>
+        <p>The Bitaxe Gamma is a small, open-source Bitcoin miner specifically designed for learning and home mining. Unlike massive industrial mining operations, the Bitaxe Gamma is:</p>
+        <ul style="color:var(--muted);margin-top:.6rem">
+          <li><strong>Affordable:</strong> Much cheaper than professional mining hardware.</li>
+          <li><strong>Educational:</strong> Perfect for learning how Bitcoin mining actually works.</li>
+          <li><strong>Open-source:</strong> The design is publicly available, so you can understand exactly how it works.</li>
+          <li><strong>Efficient:</strong> Designed to mine SHA-256 with reasonable power consumption.</li>
+          <li><strong>Hashrate:</strong> The Bitaxe Gamma produces 1.3 TH/s (terahashes per second).</li>
+        </ul>
+        <p style="margin-top:.6rem">When you rent a Bitaxe Gamma from HashRental, we host it in our facilities in Finland with reliable electricity. You maintain complete control over your mining configuration and Bitcoin rewards.</p>
+      </div>
+    </section>
+
+    <section style="margin-top:1.2rem">
+      <div class="card reveal">
+        <h2 class="hero-title">How Does Mining Work?</h2>
+
+        <h3 style="margin-top:1rem;margin-bottom:.4rem">Mining Hardware</h3>
+        <p style="color:var(--muted)">Mining hardware is specialized computers that perform the computational work needed to validate Bitcoin blocks. The Bitaxe Gamma is a modern example designed for efficiency and ease of use. Professional miners use ASICs (Application-Specific Integrated Circuits) that are optimized purely for this work.</p>
+
+        <h3 style="margin-top:1rem;margin-bottom:.4rem">Hashrate</h3>
+        <p style="color:var(--muted)">Hashrate measures how many hash calculations a miner can perform per second. The Bitaxe Gamma has a hashrate of 1.3 TH/s (terahashes per second = 1.3 trillion hashes per second). Higher hashrate means more chances to solve blocks, but the relationship is not perfectly linear because of mining difficulty.</p>
+
+        <h3 style="margin-top:1rem;margin-bottom:.4rem">Mining Difficulty</h3>
+        <p style="color:var(--muted)">Bitcoin adjusts the difficulty of the mining puzzle every 2,016 blocks (approximately two weeks) to maintain an average block time of 10 minutes. When more miners join the network, difficulty increases. When miners leave, it decreases. This ensures Bitcoin's security and consistency regardless of network size.</p>
+
+        <h3 style="margin-top:1rem;margin-bottom:.4rem">Mining Pools</h3>
+        <p style="color:var(--muted)">Mining alone (solo mining) means you keep 100% of rewards, but the probability of finding a block is extremely low. Mining pools combine the computing power of many miners. When the pool finds a block, the reward is split among all contributors based on their contributed hashrate. This provides more consistent, predictable rewards.</p>
+
+        <h3 style="margin-top:1rem;margin-bottom:.4rem">Bitcoin Rewards</h3>
+        <p style="color:var(--muted)">Miners receive rewards in two forms: the block subsidy (newly created Bitcoin) and transaction fees. As of now, the block subsidy is 6.25 BTC, but this amount halves roughly every 4 years in an event called the "halving." Transaction fees vary depending on network congestion and come directly to the miner's configured address through the mining pool.</p>
+      </div>
+    </section>
+
+    <section style="margin-top:1.2rem">
+      <div class="card reveal">
+        <h2 class="hero-title">What Happens When You Rent from HashRental?</h2>
+        <p>When you rent a Bitaxe Gamma from HashRental, here's exactly what you get:</p>
+        <ul style="color:var(--muted);margin-top:.6rem">
+          <li><strong>We provide the hardware:</strong> You don't need to buy or own a Bitaxe Gamma. We supply, host, and maintain it.</li>
+          <li><strong>Electricity is included:</strong> You pay a flat rental fee. All electricity costs are already factored in.</li>
+          <li><strong>You choose your pool:</strong> After payment, you configure which mining pool you want to use. You have complete freedom here.</li>
+          <li><strong>You enter your wallet:</strong> You provide your own Bitcoin wallet address to receive rewards.</li>
+          <li><strong>Bitcoin goes directly to you:</strong> Your mining pool sends rewards directly to your wallet. Nordhash Oy never touches your Bitcoin.</li>
+          <li><strong>Nordhash Oy never controls your Bitcoin:</strong> We only provide the hardware and hosting. You maintain full custody and control of your rewards.</li>
+        </ul>
+        <p style="margin-top:.6rem">This model is completely different from "cloud mining" scams where a company promises to mine for you and sends you rewards. With HashRental, you're renting real, verifiable hardware that you configure yourself.</p>
+      </div>
+    </section>
+
+    <section style="margin-top:1.2rem">
+      <div class="card reveal">
+        <h2 class="hero-title">Why Rent Instead of Buying?</h2>
+        <p>Buying your own mining hardware and running it has several disadvantages for beginners:</p>
+
+        <h3 style="margin-top:1rem;margin-bottom:.4rem">🚫 High Hardware Investment</h3>
+        <p style="color:var(--muted)">A quality Bitaxe Gamma costs hundreds of euros. Add networking equipment, power supplies, and cooling, and the upfront cost quickly becomes significant.</p>
+
+        <h3 style="margin-top:1rem;margin-bottom:.4rem">⚡ Electricity Costs</h3>
+        <p style="color:var(--muted)">Mining hardware runs 24/7. Your electricity bill can quickly become substantial, especially in countries with high power costs. You need to calculate if mining is even profitable in your location.</p>
+
+        <h3 style="margin-top:1rem;margin-bottom:.4rem">🔧 Technical Complexity</h3>
+        <p style="color:var(--muted)">Setting up mining hardware, configuring pool connections, maintaining it over time, and troubleshooting issues requires technical knowledge.</p>
+
+        <h3 style="margin-top:1rem;margin-bottom:.4rem">📦 Space and Logistics</h3>
+        <p style="color:var(--muted)">Mining hardware needs physical space and good cooling. Dealing with equipment failures, RMAs, or replacements is a hassle.</p>
+
+        <h3 style="margin-top:.8rem;margin-bottom:.4rem;color:var(--accent)">✅ Why Renting from HashRental Makes Sense</h3>
+        <ul style="color:var(--muted)">
+          <li><strong>Low entry cost:</strong> Start mining from only €9 for 7 days. Test if you enjoy mining without major investment.</li>
+          <li><strong>No electricity costs:</strong> Everything is included. You know exactly what you're paying.</li>
+          <li><strong>Learn safely:</strong> Experiment with different mining pools without being locked into expensive hardware.</li>
+          <li><strong>Test different pools:</strong> Try Stratum V2, public pools, or regional pools to see which you prefer.</li>
+          <li><strong>Easy to start:</strong> We handle hosting, maintenance, and configuration. You just set your pool and wallet.</li>
+          <li><strong>No commitment:</strong> Rent for 7 or 14 days. No long-term contracts. Stop anytime.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section style="margin-top:1.2rem">
+      <div class="card reveal">
+        <h2 class="hero-title">Is Bitcoin Mining Profitable?</h2>
+        <p><strong style="color:#ff9999">⚠️ Important: Mining profitability is never guaranteed.</strong></p>
+        <p style="margin-top:.6rem">Many factors affect whether you make a profit or loss when mining:</p>
+
+        <h3 style="margin-top:1rem;margin-bottom:.4rem">Bitcoin Price</h3>
+        <p style="color:var(--muted)">Mining rewards are paid in Bitcoin. If the price drops significantly, your rewards are worth less even if you mine the same amount.</p>
+
+        <h3 style="margin-top:1rem;margin-bottom:.4rem">Network Difficulty</h3>
+        <p style="color:var(--muted)">As more miners join the network, difficulty increases and blocks are found less frequently per unit of hashrate. This reduces rewards.</p>
+
+        <h3 style="margin-top:1rem;margin-bottom:.4rem">Pool Luck</h3>
+        <p style="color:var(--muted)">Mining pools have variance. Sometimes they find blocks faster than expected (good luck), sometimes slower (bad luck). Over time this averages out, but short-term variance is real.</p>
+
+        <h3 style="margin-top:1rem;margin-bottom:.4rem">Rental Duration</h3>
+        <p style="color:var(--muted)">The longer you rent, the more time you have to accumulate rewards and benefit from mining. A 7-day rental is very short and may only generate satoshis (small amounts of Bitcoin).</p>
+
+        <h3 style="margin-top:.8rem;margin-bottom:.4rem">📊 Example</h3>
+        <p style="color:var(--muted)">A Bitaxe Gamma at 1.3 TH/s on a major pool might generate 0.0001 to 0.001 BTC over 7 days at current difficulty levels (this is highly variable). Whether this is "profitable" depends on Bitcoin's price, rental fees, and your expectations.</p>
+
+        <div style="background:rgba(255,100,100,0.1);padding:.8rem;border-radius:8px;margin-top:1rem;border-left:3px solid rgba(255,100,100,0.3)">
+          <p style="margin:0;color:#ffcccc"><strong>⚠️ Disclaimer:</strong> HashRental provides hardware rental only and does not guarantee mining income. Mining profitability depends on factors beyond our control, including Bitcoin price, network difficulty, and pool performance. Past performance does not indicate future results. Never invest more in mining than you can afford to lose.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" style="margin-top:1.2rem">
+      <div class="card reveal">
+        <h2 class="hero-title">Frequently Asked Questions</h2>
+
+        <details>
+          <summary>Is this cloud mining?</summary>
+          <div class="muted-small" style="margin-top:.6rem">No. HashRental is hardware rental, not cloud mining. You configure real, verifiable hardware (a Bitaxe Gamma) that we host. You choose your own mining pool and wallet. Cloud mining typically refers to services where you buy mining contracts and the operator handles everything (often a scam). This is completely different.</div>
+        </details>
+
+        <details style="margin-top:.6rem">
+          <summary>Do I own the miner?</summary>
+          <div class="muted-small" style="margin-top:.6rem">No, you rent the miner for 7 or 14 days. After your rental period ends, you no longer have access to it. You can rent again anytime, but you never own the hardware.</div>
+        </details>
+
+        <details style="margin-top:.6rem">
+          <summary>Who receives the Bitcoin I mine?</summary>
+          <div class="muted-small" style="margin-top:.6rem">You do. Mining rewards go directly from your configured mining pool to the Bitcoin wallet address you provide. Nordhash Oy never receives or controls your Bitcoin. You maintain full custody.</div>
+        </details>
+
+        <details style="margin-top:.6rem">
+          <summary>Can beginners use this?</summary>
+          <div class="muted-small" style="margin-top:.6rem">Absolutely. You don't need to be a technical expert. After payment, you'll use a simple configuration page to enter your mining pool information and Bitcoin wallet address. We provide clear instructions for each step.</div>
+        </details>
+
+        <details style="margin-top:.6rem">
+          <summary>Do I need a Bitcoin wallet?</summary>
+          <div class="muted-small" style="margin-top:.6rem">Yes. You need a Bitcoin wallet address to receive your mining rewards. If you don't have one, you can create one in minutes using free wallets like Electrum, BlueWallet, or hardware wallets like Ledger. Make sure you have the wallet set up before starting your rental so you can configure it immediately after payment.</div>
+        </details>
+
+        <details style="margin-top:.6rem">
+          <summary>What is a mining pool?</summary>
+          <div class="muted-small" style="margin-top:.6rem">A mining pool combines the computing power of many miners to increase the chances of finding blocks. When the pool finds a block, the reward (minus a small pool fee) is divided among all contributors based on their hashrate. Mining pools provide consistent, predictable rewards compared to solo mining. Popular pools include Stratum V2, Braiins, and others.</div>
+        </details>
+
+        <details style="margin-top:.6rem">
+          <summary>What mining pools do you recommend?</summary>
+          <div class="muted-small" style="margin-top:.6rem">We don't recommend a specific pool because the choice is entirely yours. Popular options include Stratum V2, Braiins (which uses Stratum V2), public pools, and regional pools. You can even switch pools during your rental if you want to experiment. Research which pool aligns with your values and preferred fee structure.</div>
+        </details>
+
+        <details style="margin-top:.6rem">
+          <summary>What happens after payment?</summary>
+          <div class="muted-small" style="margin-top:.6rem">After you complete your SumUp payment, you'll receive a confirmation. Return to HashRental and click "Configure My Miner" to access the setup page. Enter your chosen mining pool information and Bitcoin wallet address. Our team will then configure your Bitaxe Gamma with this information and activate it (usually within 12 hours).</div>
+        </details>
+
+        <details style="margin-top:.6rem">
+          <summary>How long does activation take?</summary>
+          <div class="muted-small" style="margin-top:.6rem">Your rental is typically activated within 12 hours of completing the configuration. This gives our team time to configure your hardware with your pool and wallet information. During peak times, activation may take longer. Once activated, you can monitor your miner's status through your mining pool's dashboard.</div>
+        </details>
+
+        <details style="margin-top:.6rem">
+          <summary>Can I rent multiple times?</summary>
+          <div class="muted-small" style="margin-top:.6rem">Yes, absolutely. You can rent as many times as you want. There's no limit on how many rentals you can do. If you enjoyed a 7-day rental, you can rent again for 14 days, or keep trying different pools and configurations.</div>
+        </details>
+
+        <details style="margin-top:.6rem">
+          <summary>Is electricity included?</summary>
+          <div class="muted-small" style="margin-top:.6rem">Yes. The rental fee (€9 for 7 days, €19 for 14 days) includes all electricity costs. You won't receive any surprise bills for power usage. The price you see is the price you pay.</div>
+        </details>
+
+        <details style="margin-top:.6rem">
+          <summary>What if the hardware fails?</summary>
+          <div class="muted-small" style="margin-top:.6rem">We monitor all our hardware 24/7. If your Bitaxe Gamma fails, we'll attempt repair or replacement as capacity allows. For specific details about our failure and refund policies, please see our Terms of Service and Refund Policy.</div>
+        </details>
+
+        <details style="margin-top:.6rem">
+          <summary>How do I monitor my mining progress?</summary>
+          <div class="muted-small" style="margin-top:.6rem">You monitor your mining through your configured mining pool's web interface or dashboard. You can track your hashrate, shares submitted, estimated rewards, and more. The pool tracks everything in real-time, and you have full visibility into your mining activity.</div>
+        </details>
+
+        <details style="margin-top:.6rem">
+          <summary>Can I stop my rental early?</summary>
+          <div class="muted-small" style="margin-top:.6rem">Rental periods are 7 or 14 days. Early termination is subject to our Terms of Service. Refund eligibility depends on when you request termination. See our Refund Policy for complete details.</div>
+        </details>
+      </div>
+    </section>
+
+    <section class="cta-full reveal" role="region" aria-label="Call to action" style="margin-top:1.6rem;padding:1.2rem;border-radius:12px">
+      <h2 style="margin-top:0">Ready to try Bitcoin mining?</h2>
+      <p class="muted-small">Start with a 7-day rental for just €9 and learn hands-on.</p>
+
+      <div style="margin-top:.8rem;display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap">
+        <a class="btn" href="https://pay.sumup.com/b2c/QPE5QDA4" rel="noopener noreferrer" target="_blank" aria-label="Rent 7 Days">Rent 7 Days</a>
+        <a class="btn" href="https://pay.sumup.com/b2c/QFNILTHI" rel="noopener noreferrer" target="_blank" aria-label="Rent 14 Days">Rent 14 Days</a>
+      </div>
+
+      <div style="margin-top:.8rem">
+        <a class="configure-btn" href="setup.html" aria-label="Configure my miner">🔧 Configure My Miner</a>
+      </div>
+
+      <div class="payment-notice" style="margin-top:.9rem">
+        ⚠️ Your rental is NOT activated after payment.<br>
+        After completing your payment, return to this website and click "Configure My Miner" to activate your rental.
+      </div>
+
+      <div class="disclaimer" style="margin-top:.6rem">
+        Hardware rental only. Not an investment product. No guaranteed mining income. See our disclaimer above for important information about mining profitability.
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:flex-start">
+        <div>
+          <div style="font-weight:700">Nordhash Oy</div>
+          <div class="muted-small">Operated from Finland</div>
+          <div class="muted-small">Business ID 3535584-8</div>
+          <div class="muted-small" style="margin-top:.4rem"><a href="mailto:nordhashoy@gmail.com" style="color:var(--muted)">nordhashoy@gmail.com</a></div>
+        </div>
+
+        <div style="display:flex;gap:1rem;flex-wrap:wrap">
+          <a class="muted-small" href="terms.html">Terms of Service</a>
+          <a class="muted-small" href="privacy.html">Privacy Policy</a>
+          <a class="muted-small" href="refunds.html">Refund Policy</a>
+          <a class="muted-small" href="cookies.html">Cookie Policy</a>
+          <a class="muted-small" href="legal.html">Legal Information</a>
+        </div>
+      </div>
+
+      <div class="muted-small" style="margin-top:.8rem">© Nordhash Oy — Hardware rental only. Not a financial or investment service.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    (function(){
+      const toggle = document.getElementById('menuToggle');
+      const menu = document.getElementById('mobile-menu');
+      if(toggle && menu){
+        toggle.addEventListener('click', () => {
+          const open = menu.classList.toggle('open');
+          menu.hidden = !open;
+          toggle.setAttribute('aria-expanded', String(open));
+        });
+      }
+      // reveal animation
+      if('IntersectionObserver' in window){
+        const io = new IntersectionObserver((entries)=>{
+          entries.forEach(e=>{
+            if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }
+          });
+        }, {threshold:0.08});
+        document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+      } else {
+        document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));
+      }
+    })();
+  </script>
+</body>
+</html>

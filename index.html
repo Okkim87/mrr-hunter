@@ -80,8 +80,9 @@
     .nav-links a{padding:.4rem .7rem;border-radius:10px}
     .cta{display:inline-flex;gap:.5rem;align-items:center}
     .btn{
-      display:inline-block;padding:.6rem 1rem;border-radius:10px;font-weight:700;background:linear-gradient(180deg,#1b6cff,#4d8bff);color:white;border:none;box-shadow:0 6px 18px rgba(13,54,122,0.3[...]
+      display:inline-block;padding:.6rem 1rem;border-radius:10px;font-weight:700;background:linear-gradient(180deg,#1b6cff,#4d8bff);color:white;border:none;box-shadow:0 6px 18px rgba(13,54,122,0.3);cursor:pointer
     }
+    .btn:disabled{background:#555;cursor:not-allowed;opacity:0.6;box-shadow:none}
     .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent)}
     :focus-visible{outline:3px solid rgba(138,180,255,0.28);outline-offset:3px;border-radius:8px}
     button:focus-visible, a:focus-visible { box-shadow: 0 0 0 4px rgba(138,180,255,0.12); }
@@ -90,31 +91,34 @@
     .hero-grid{display:grid;gap:1.2rem}
     .title{font-size:clamp(1.6rem,5vw,2.8rem);line-height:1.02;margin:0;font-weight:700}
     .subtitle{color:var(--muted);margin-top:.6rem;font-size:1rem}
-    .banner{display:inline-block;padding:.45rem .8rem;border-radius:999px;background:linear-gradient(90deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02));border:1px solid var(--glass-border);font-[...]
+    .banner{display:inline-block;padding:.45rem .8rem;border-radius:999px;background:linear-gradient(90deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02));border:1px solid var(--glass-border);font-size:.85rem;color:var(--muted);width:fit-content}
     .banner--scarce{background: linear-gradient(90deg,#ff7043,#ff8a00);color: #fff;border: 1px solid rgba(255,255,255,0.06);box-shadow: 0 6px 18px rgba(255,120,50,0.06);font-weight:800}
+    .banner--coming{background: linear-gradient(90deg,#ff7043,#ff8a00);color: #fff;border: 1px solid rgba(255,255,255,0.06);box-shadow: 0 6px 18px rgba(255,120,50,0.06);font-weight:800;width:fit-content}
 
     .cards{display:grid;gap:1rem;margin-top:1.2rem}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius);padding:1rem;border:1px solid var(--glass-border);box-shadow:0 8px 30px rgb[...]
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius);padding:1rem;border:1px solid var(--glass-border);box-shadow:0 8px 30px rgba(0,0,0,0.3)}
 
     .plans{display:grid;gap:.9rem}
-    .plan{display:flex;flex-direction:column;gap:.6rem;padding:1rem;border-radius:12px;border:1px solid rgba(255,255,255,0.03);background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255[...]
+    .plan{display:flex;flex-direction:column;gap:.6rem;padding:1rem;border-radius:12px;border:1px solid rgba(255,255,255,0.03);background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.008))}
 
     .specs{display:flex;flex-wrap:wrap;gap:.6rem;color:var(--muted);font-size:.95rem}
     .price-row{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.6rem}
     .price-card{background:var(--badge-bg);padding:.5rem .75rem;border-radius:10px;border:1px solid rgba(255,255,255,0.03);font-weight:700}
 
     .badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.8rem}
-    .badge{background:rgba(0,0,0,0.35);padding:.45rem .7rem;border-radius:999px;border:1px solid rgba(255,255,255,0.03);color:var(--muted);font-weight:600;display:inline-flex;align-items:center;g[...]
+    .badge{background:rgba(0,0,0,0.35);padding:.45rem .7rem;border-radius:999px;border:1px solid rgba(255,255,255,0.03);color:var(--muted);font-weight:600;display:inline-flex;align-items:center;gap:.35rem;font-size:.9rem}
 
     .rental-actions{display:flex;flex-direction:column;gap:.6rem;align-items:center}
     .rent-row{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center}
-    .configure-btn{display:inline-block;padding:.68rem 1.05rem;border-radius:12px;background:linear-gradient(180deg,#1b6cff,#4d8bff);color:#fff;font-weight:800;border:0;min-width:220px}
+    .configure-btn{display:inline-block;padding:.68rem 1.05rem;border-radius:12px;background:linear-gradient(180deg,#1b6cff,#4d8bff);color:#fff;font-weight:800;border:0;min-width:220px;cursor:pointer}
+    .configure-btn:disabled{background:#555;cursor:not-allowed;opacity:0.6}
     @media(max-width:719px){
       .configure-btn{display:block;width:100%;text-align:center}
       .rent-row{justify-content:space-between}
     }
 
-    .payment-notice{margin-top:.6rem;color:#ffd9b3;background:linear-gradient(180deg,rgba(255,245,230,0.02),rgba(255,240,220,0.01));padding:.6rem;border-radius:10px;border:1px solid rgba(255,160,[...]
+    .payment-notice{margin-top:.6rem;color:#ffd9b3;background:linear-gradient(180deg,rgba(255,245,230,0.02),rgba(255,240,220,0.01));padding:.6rem;border-radius:10px;border:1px solid rgba(255,160,100,0.2);font-size:.9rem}
+    .coming-notice{margin-top:.6rem;color:#ccc;background:linear-gradient(180deg,rgba(100,100,120,0.08),rgba(80,80,100,0.05));padding:.6rem;border-radius:10px;border:1px solid rgba(100,100,150,0.2);font-size:.9rem}
 
     .reveal{opacity:0;transform:translateY(12px);transition:opacity .6s ease,transform .6s ease}
     .reveal.visible{opacity:1;transform:none}
@@ -131,24 +135,25 @@
       .mobile-menu:not([hidden]){display:flex}
     }
 
-    /* Bitaxe Gamma card: image layout */
-    .bitaxe-card {
+    /* Product card layout */
+    .product-card {
       display: grid;
       grid-template-columns: 1fr 320px;
       gap: 1rem;
-      align-items: center; /* vertical centering */
+      align-items: center;
       align-content: center;
+      position: relative;
     }
-    .bitaxe-title { order: 0; }
-    .bitaxe-image { display:flex; justify-content:center; align-items:center; }
-    .bitaxe-image img { width: 280px; height: auto; display:block; border-radius:8px; }
-    .bitaxe-buttons { display:flex; gap:.6rem; flex-wrap:wrap; justify-content:flex-start; align-items:center; }
-    /* Payment notice area inside card */
-    .bitaxe-card .payment-notice { margin-top: .6rem; }
+    .product-title { order: 0; }
+    .product-image { display:flex; justify-content:center; align-items:center; }
+    .product-image img { width: 280px; height: auto; display:block; border-radius:8px; }
+    .product-buttons { display:flex; gap:.6rem; flex-wrap:wrap; justify-content:flex-start; align-items:center; }
+    .product-card .payment-notice { margin-top: .6rem; }
+    .coming-soon-badge { position:absolute; top:.8rem; left:.8rem; }
 
     /* Mobile adjustments */
     @media (max-width: 719px) {
-      .bitaxe-card {
+      .product-card {
         grid-template-columns: 1fr;
         grid-template-areas:
           "title"
@@ -156,11 +161,12 @@
           "buttons"
           "notice";
       }
-      .bitaxe-title { grid-area: title; }
-      .bitaxe-image { grid-area: image; order: 2; }
-      .bitaxe-buttons { grid-area: buttons; order: 3; justify-content:center; }
-      .bitaxe-card .payment-notice { grid-area: notice; order: 4; }
-      .bitaxe-image img { width: 180px; max-width:100%; }
+      .product-title { grid-area: title; }
+      .product-image { grid-area: image; order: 2; }
+      .product-buttons { grid-area: buttons; order: 3; justify-content:center; }
+      .product-card .payment-notice { grid-area: notice; order: 4; }
+      .product-image img { width: 180px; max-width:100%; }
+      .coming-soon-badge { position:static; margin-bottom:.6rem; }
     }
   </style>
 </head>
@@ -242,15 +248,15 @@
 
         <aside>
           <div class="cards">
+            <!-- Bitaxe Gamma Product Card -->
             <div class="card reveal" aria-hidden="false">
-              <!-- Bitaxe Gamma product card with image on right (desktop) and above buttons (mobile) -->
-              <div class="bitaxe-card">
-                <div class="bitaxe-title">
+              <div class="product-card">
+                <div class="product-title">
                   <h4 style="margin:0">Bitaxe Gamma</h4>
                   <p class="muted-small" style="margin:.4rem 0 0">1.3 TH/s • SHA-256</p>
                 </div>
 
-                <div class="bitaxe-image" aria-hidden="false">
+                <div class="product-image" aria-hidden="false">
                   <img src="bitaxe-gamma.jpg"
      alt="Bitaxe Gamma Bitcoin Miner"
      loading="lazy"
@@ -258,7 +264,7 @@
      height="400">
                 </div>
 
-                <div class="bitaxe-buttons" aria-hidden="false">
+                <div class="product-buttons" aria-hidden="false">
                   <a class="btn" href="https://pay.sumup.com/b2c/QPE5QDA4" target="_blank" rel="noopener noreferrer" aria-label="Rent 7 Days">Rent 7 Days</a>
                   <a class="btn" href="https://pay.sumup.com/b2c/QFNILTHI" target="_blank" rel="noopener noreferrer" aria-label="Rent 14 Days">Rent 14 Days</a>
                 </div>
@@ -267,6 +273,65 @@
                   ⚠️ Your rental is NOT activated after payment.<br>
                   After completing your payment, return to this website and click "Configure My Miner" to activate your rental.
                 </div>
+              </div>
+            </div>
+
+            <!-- Antminer S9 Product Card (Coming Soon) -->
+            <div class="card reveal" aria-hidden="false">
+              <div class="product-card">
+                <div class="coming-soon-badge">
+                  <div class="banner banner--coming" style="width:fit-content">🚧 COMING SOON</div>
+                </div>
+
+                <div class="product-title">
+                  <h4 style="margin:0">Antminer S9</h4>
+                  <p class="muted-small" style="margin:.4rem 0 0">13 TH/s • SHA-256</p>
+                </div>
+
+                <div class="product-image" aria-hidden="false">
+                  <img src="antminer-s9.jpg"
+     alt="Antminer S9 Bitcoin Miner"
+     loading="lazy"
+     width="560"
+     height="400">
+                </div>
+
+                <div class="product-buttons" aria-hidden="false">
+                  <button class="btn" disabled aria-label="Coming Soon">Coming Soon</button>
+                  <button class="configure-btn" disabled aria-label="Available Soon">Available Soon</button>
+                </div>
+
+                <div class="coming-notice" style="margin-top:.7rem">
+                  This miner is currently being prepared for rental. Pricing is shown in advance. Rentals will open soon.
+                </div>
+              </div>
+
+              <!-- Pricing Display -->
+              <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.03)">
+                <p style="margin:0 0 .6rem 0;font-size:.85rem;color:var(--muted)"><strong>Advance Pricing:</strong></p>
+                <div style="display:flex;gap:.6rem;flex-wrap:wrap">
+                  <div class="price-card">7 Days — €49</div>
+                  <div class="price-card">14 Days — €89</div>
+                </div>
+              </div>
+
+              <!-- Specifications -->
+              <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.03)">
+                <p style="margin:0 0 .6rem 0;font-size:.85rem;color:var(--muted)"><strong>Specifications:</strong></p>
+                <ul style="margin:.6rem 0 0;padding-left:1.1rem;color:var(--muted);font-size:.9rem">
+                  <li>Hashrate: 13 TH/s</li>
+                  <li>Algorithm: SHA-256</li>
+                  <li>Hosted in Finland</li>
+                  <li>Electricity included</li>
+                  <li>24/7 Monitoring</li>
+                  <li>Customer controls mining pool</li>
+                  <li>Mining rewards go directly to wallet</li>
+                </ul>
+              </div>
+
+              <!-- Description -->
+              <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.03)">
+                <p style="margin:0;color:var(--muted);font-size:.9rem">The Antminer S9 is a proven Bitcoin ASIC miner delivering approximately 13 TH/s. Hosted in Finland with electricity included. Simply configure your preferred mining pool and receive all mining rewards directly to your own wallet.</p>
               </div>
             </div>
 
@@ -384,7 +449,7 @@
       </div>
     </section>
 
-    <section class="cta-full reveal" role="region" aria-label="Call to action" style="margin-top:1.6rem;padding:1.2rem;border-radius:12px;background:linear-gradient(180deg, rgba(75,75,85,0.18), r[...]
+    <section class="cta-full reveal" role="region" aria-label="Call to action" style="margin-top:1.6rem;padding:1.2rem;border-radius:12px;background:linear-gradient(180deg, rgba(75,75,85,0.18), rgba(60,60,75,0.12));border:1px solid rgba(255,255,255,0.03)">
       <h3>Ready to start mining?</h3>
       <p class="muted-small">Rent real Bitcoin mining hardware today.</p>
 
@@ -402,7 +467,7 @@
         After completing your payment, return to this website and click "Configure My Miner" to activate your rental.
       </div>
 
-      <div class="disclaimer" style="margin-top:.6rem">Hardware rental only. Not an investment product. No guaranteed mining income.</div>
+      <div class="disclaimer" style="margin-top:.6rem;font-size:.85rem;color:#b39">Hardware rental only. Not an investment product. No guaranteed mining income.</div>
     </section>
 
   </main>

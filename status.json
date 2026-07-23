@@ -1,6 +1,6 @@
 {
-  "accepted": 129372,
-  "asicTemp": 56,
+  "accepted": 129388,
+  "asicTemp": 55,
   "average": 1.35,
   "error": 0,
   "fan": 5197,
@@ -9,5 +9,5 @@
   "rejected": 117,
   "status": "Online",
   "uptime": "6d 8h",
-  "vrmTemp": 67
+  "vrmTemp": 68
 }

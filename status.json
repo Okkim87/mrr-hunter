@@ -1,9 +1,9 @@
 {
-  "accepted": 125976,
+  "accepted": 125987,
   "asicTemp": 55,
   "average": 1.35,
-  "error": 0,
-  "fan": 5217,
+  "error": 0.3225752,
+  "fan": 5197,
   "hashrate": 1.33,
   "power": 23.6,
   "rejected": 117,

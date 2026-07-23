@@ -563,5 +563,35 @@ if (!RENTALS_OPEN) {
   });  
   
 }  
-  </script>  </body>  
+ <script>
+async function updateMinerStatus() {
+
+    try {
+
+        const response = await fetch("status.json?" + Date.now());
+        const data = await response.json();
+
+        document.getElementById("status").textContent = data.status ?? "Offline";
+        document.getElementById("hashrate").textContent = (data.hashrate ?? "-") + " TH/s";
+        document.getElementById("asicTemp").textContent = (data.asicTemp ?? "-") + " °C";
+        document.getElementById("vrmTemp").textContent = (data.vrmTemp ?? "-") + " °C";
+        document.getElementById("power").textContent = (data.power ?? "-") + " W";
+        document.getElementById("fan").textContent = (data.fan ?? "-") + " RPM";
+        document.getElementById("uptime").textContent = data.uptime ?? "-";
+        document.getElementById("accepted").textContent = data.accepted ?? "-";
+        document.getElementById("rejected").textContent = data.rejected ?? "-";
+        document.getElementById("error").textContent =
+            data.error != null ? Number(data.error).toFixed(2) + " %" : "-";
+
+    } catch (e) {
+
+        document.getElementById("status").textContent = "Offline";
+
+    }
+
+}
+
+updateMinerStatus();
+setInterval(updateMinerStatus, 60000);
+</script>  </body>  
 </html>

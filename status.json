@@ -1,10 +1,10 @@
 {
-  "accepted": 135783,
+  "accepted": 135795,
   "asicTemp": 55,
   "average": 1.35,
-  "error": 0.3355312,
+  "error": 0,
   "fan": 5197,
-  "hashrate": 1.28,
+  "hashrate": 1.43,
   "power": 23.6,
   "rejected": 117,
   "status": "Online",

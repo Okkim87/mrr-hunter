@@ -1,8 +1,8 @@
 {
-  "accepted": 131593,
-  "asicTemp": 55,
+  "accepted": 131609,
+  "asicTemp": 54,
   "average": 1.35,
-  "error": 0.3047436,
+  "error": 0.3039505,
   "fan": 5217,
   "hashrate": 1.41,
   "power": 23.5,
